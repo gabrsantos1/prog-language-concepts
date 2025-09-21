@@ -45,3 +45,24 @@ Resolução das atividades dos capítulos 5 e 6 da disciplina de Paradigmas de P
 - ### Quando seria mais adequado usar array e quando usar struct/classe?
 
     Array é indicado ser utilizado em coleções de itens que são pré-ordenados, ou seja, do mesmo tipo. Já no caso de Struct é recomendado utilizar em situações de armazenamento de itens de diferentes tipos.
+
+## Capitulo 8 - Atividade 1
+
+- ### Compare os três códigos (original com `goto`, versão com `while` e versão com `for`) e escreva um pequeno parágrafo discutindo qual forma é mais legível e por quê.
+
+    O código com goto é menos legível, pois obriga o programador a acompanhar saltos manuais. A versão com while é simples e clara, mas ainda exige inicialização e atualização da variável de controle. Já a versão com for é a mais simples e legível, pois resume toda a lógica do contador em uma única linha, evitando erros e tornando o fluxo de repetição mais evidente.
+
+## Capitulo 8 - Atividade 2
+
+- ### Escreva um comentário final destacando em qual linguagem foi mais simples de implementar e justificar o motivo.
+
+    Em C o switch/case deixa claro quais são as opções, mas exige mais código. Já em Python o código é mais curto e direto, sem necessidade de tipos explícitos e com menos linhas de código. É mais simples em Python, pois a linguagem exige menos código.
+
+## Capitulo 8 - Atividade 3
+
+- ### Comente sobre como seria a implementação desse mesmo programa utilizando apenas `goto` e rótulos, destacando as vantagens da abordagem moderna.
+
+    Com goto precisaria criar rótulos e saltos manuais para números negativos, zero ou retornar o resultado. Essa abordagem deixaria o código com a manutenção dificultada por conta do fluxo lógico espalhado. Atualmente, com estruturas melhores, o código fica mais claro e legível e com a manutenção mais "fácil".
+
+## Capitulo 9 - Atividade 1
+
