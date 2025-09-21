@@ -66,3 +66,28 @@ Resolução das atividades dos capítulos 5 e 6 da disciplina de Paradigmas de P
 
 ## Capitulo 9 - Atividade 1
 
+- ### Qual a diferença observada entre as duas versões?
+
+    Por valor a variável original não se altera, apenas uma cópia dela. Na versão por referência a varíavel original se altera por receber o endereço da memória da variável.
+
+- ### Por que o valor da variável só se altera na versão por referência?
+
+    Porque ao passar por referência, a função acessa diretamente o mesmo espaço de memória da variável no programa principal.
+
+- ### Relacione essa diferença com as estratégias de passagem de parâmetros discutidas no Capítulo 9.
+
+    A passagem por valor preserva a variável original, útil quando não queremos efeitos colaterais. Já a passagem por referência permite modificar a variável diretamente, o que pode ser vantajoso em termos de eficiência e quando é necessário alterar o valor original.
+
+## Capitulo 9 - Atividade 2
+
+- ### O que acontece com a ordem das mensagens exibidas?
+
+    As mensagens aparecem intercaladas, mas não de forma determinística. A ordem pode variar a cada execução, pois depende do agendamento da corrotina pelo sistema.
+
+- ### Por que as mensagens da corrotina e da função normal se intercalam?
+
+    Porque a função marcada com go é executada concorrentemente com o fluxo principal. Enquanto uma função “dorme”, a outra pode continuar executando, alternando a saída no console.
+
+- ### Relacione esse comportamento com a definição de **corrotinas** estudada no Capítulo 9.
+
+    Corrotinas são rotinas que podem ser executadas de forma concorrente, permitindo múltiplos fluxos de execução dentro de um mesmo programa. A função escrever("Corrotina") é uma corrotina, e sua execução em paralelo com a função principal demonstra isso.
